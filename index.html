@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous">
+
+    <script>
+        function filterCards(category) {
+            const cards = document.getElementsByClassName('boxedit');
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                if (category === 'all') {
+                    card.style.display = 'block'; // Show all cards
+                } else if (card.classList.contains(category)) {
+                    card.style.display = 'block'; // Show cards matching the selected category
+                } else {
+                    card.style.display = 'none'; // Hide cards not matching the selected category
+                }
+            }
+        }
+
+
+        function addToCart(name, image, price) {
+            const item = {
+                name: name,
+                image: image,
+                price: price
+            };
+            localStorage.setItem('selectedItem', JSON.stringify(item));
+            window.location.href = 'cart.html';
+        }
+
+
+    </script>
+
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <!-- This is first navbar -->
+    <div class="firsthead">
+        <h1 class="hello"><span class="bold">Gocein</span></h1>
+        <div class="navbar">
+            <h3 id="first">Home</h2>
+                <h3 id="first">About</h2>
+                    <h3 id="first">Categories</h2>
+                        <h3 id="first">Service</h2>
+                            <h3 id="first">Contact</h2>
+        </div>
+    </div>
+
+    <!-- secondRow -->
+    <div class="secondText">
+        <div class="fortext">
+            <div class="widthadjust">
+                <h1>A Place where everything special</h1>
+            </div>
+            <div class="forsmalltext">
+                <h3>We help you to buy fresh frocery from your home.Eat fresh and stay healthy</h2>
+                    <div class="forbutton">
+                        <button class="Greenbutton">How to Order</button>
+                        <button class="Whitebutton">See Categories</button>
+                    </div>
+                    <div class="imagewithtext">
+                        <img src="image/first.jpg" alt="hijib" class="roundimage">
+                        <h3 class="supply">Supper fast delivery and various payment option! Great Job Gocien!</h3>
+                    </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="image/photo1.png" alt="photo1" class="secondpart">
+        </div>
+    </div>
+
+
+    <!-- Third row -->
+    <div class="trusted">
+        <div class="trustedimaage">
+            <img src="image/photo2.png" alt="trusted" class="trustededitimg" />
+        </div>
+    </div>
+
+    <!-- Fourth ROw  -->
+    <div class="Third-main-row">
+        <diV class="GocienText">
+            <div class="insideGocienText">
+                <h1 class="gohead">Gocien could be your daily services</h1>
+                <h4 class="texttext">Lean into that problem translating our vision of having a market leading paltfrom.
+                    Commitment data-point high performance</h3>
+                    <div class="tickandtext">
+                        <div class="backgroundc">
+                            <i class="fas fa-check"> </i>
+                        </div>
+                        <div>
+                            <h3 class="bestservice">Best services than others</h3>
+                        </div>
+                    </div>
+
+                    <div class="tickandtext">
+                        <div class="backgroundc">
+                            <i class="fas fa-check"> </i>
+                        </div>
+                        <div>
+                            <h3 class="bestservice">Use experience staff</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="tickandtext">
+                        <div class="backgroundc">
+                            <i class="fas fa-check"> </i>
+                        </div>
+                        <div>
+                            <h3 class="bestservice">Usefriendly app</h3>
+                        </div>
+                    </div>
+
+            </div>
+        </diV>
+        <div class="DivideBoxes">
+            <div class="firstcolumn">
+                <!-- box1 -->
+                <div class="box1">
+                    <div class="tickandtext1">
+                        <div class="backgroundhigh">
+                            <i class="fas fa-utensils fafafa"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Fresh Food</h1>
+                    </div>
+                    <div>
+                        <h4 class="texting">Lean into that problem translating our vision of having</h4>
+                    </div>
+                </div>
+                <!-- box2 -->
+                <div class="box1">
+                    <div class="tickandtext1">
+                        <div class="backgroundhigh">
+                            <i class="fas fa-shipping-fast fafafa"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Fastest Delivery</h1>
+                    </div>
+                    <div>
+                        <h4 class="texting">Lean into that problem translating our vision of having</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="secondcolum">
+                <!-- box-3 -->
+                <div class="box1">
+                    <div class="tickandtext1">
+                        <div class="backgroundhigh">
+                            <i class="fas fa-map-marker-alt fafafa"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Live Tracking</h1>
+                    </div>
+                    <div>
+                        <h4 class="texting">Lean into that problem translating our vision of having</h4>
+                    </div>
+                </div>
+
+                <!-- box4 -->
+                <div class="box1">
+                    <div class="tickandtext1">
+                        <div class="backgroundhigh">
+                            <i class="fas fa-dollar-sign fafafa"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Low Cost Delivery</h1>
+                    </div>
+                    <div>
+                        <h4 class="texting">Lean into that problem translating our vision of having</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- fifth ROw -->
+    <div class="fifth-row">
+        <div class="weoffer">
+            <div class="widthadjust1">
+
+                <h2>We offer people best way to eat fresh food</h2>
+            </div>
+        </div>
+        <div class="seemore">
+            <div class="seemoretext">
+                <h3>Lean into that problem translating our vision of having a market leading platfrom Commitment
+                    data-point high performance</h3>
+            </div>
+            <div class="buttontext">
+                <button class="Greenbutton">See More</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- sixthROw -->
+    <div class="startCurd">
+        <div class="container">
+            <!-- horizontal-line -->
+            <div class="horizontal-line"></div>
+            <div class="buttonclass">
+                <button class="Greenbutton forgap" onclick="filterCards('all')">All</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('vegetable')">Vegetable</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('fruit')">Fruit</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('frozen')">Frozen Food</button>
+                <button class="AddWhitebutton forgap">Fish & Seafood</button>
+                <button class="AddWhitebutton forgap">Cake&Bakery</button>
+                <button class="AddWhitebutton forgap">Milk</button>
+            </div>
+            <div class="creatingCard">
+                <div class="startcard">
+                    <!-- box1javascript     -->
+                    <div class="boxedit vegetable">
+                        <img src="image/broccoli.png" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Broccoli</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">5.87</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to Cart</button>
+                    </div>
+
+
+                    <!-- box2javascript     -->
+                    <div class="boxedit">
+                        <img src="image/oninon.png" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Onion</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">3.56</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Onion')">Add to Card</button>
+                    </div>
+
+
+                    <!-- box3javascript     -->
+                    <div class="boxedit fruit">
+                        <img src="image/banana.png" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Banana</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">9.56</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton">Add to Card</button>
+                    </div>
+
+
+                    <!-- box4javascript     -->
+                    <div class="boxedit frozen">
+                        <img src="image/egg.png" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Egg</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">2.12</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton">Add to Card</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- seventhRow -->
+
+    <div class="SeventhRow">
+        <div class="SeventhRowImage">
+            <img src="image/downloadour.png" alt="dowload" class="sevenImage">
+        </div>
+
+    </div>
+
+
+    <!-- eigthROw is Dounot-->
+    <div class="donout">
+        <div class="donoutImage">
+            <img src="image/dounot.png" alt="donout" class="donoutinImage">
+
+        </div>
+        <div class="forfortext">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.</h3>
+        </div>
+    </div>
+
+    <!-- FooterROw -->
+    <div class="footerRow">
+        <div class="startingfooter">
+            <div class="branding">
+                <h3 id="sameclassname">Campaings</h3>
+                <h3 id="sameclassname">Email Marketing </h3>
+                <h3 id="sameclassname">Branding</h3>
+                <h3 id="sameclassname">Offline</h3>
+                <h3 id="sameclassname">Contact</h3>
+                <h3 id="sameclassname">Offline</h3>
+            </div>
+            <div class="startingIcon">
+                <i class="fab fa-facebook-f fatwin"></i>
+                <i class="fab fa-twitter fatwin"></i>
+                <i class="fab fa-instagram fatwin"></i>
+            </div>
+        </div>
+    </div>
+
+    <a href="login.html">Login</a>
+
+</body>
+
+</html>

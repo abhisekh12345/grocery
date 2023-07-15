@@ -1,0 +1,95 @@
+
+
+
+  body {
+    background-image: url("image/globrack.jpg");
+    background-size: cover; 
+  }
+  
+  .form{
+   width: 30rem;
+   max-width: 600px;
+    border: 1px solid green;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1 ;
+    margin-top: 9rem;
+    border-radius: 10px;
+  }
+  
+  
+  .form-input{
+    padding: 0.1rem;
+  width:  100%;
+    background-color:#f8fafc ;
+    border-radius: 0.3rem;
+    height: 1.5rem;
+  }
+  
+  
+  .from-label{
+    display: block;
+    text-transform: capitalize;
+    margin: 0.4rem 0rem;
+  }
+  
+  .from-row{
+    margin: 1rem;
+  
+  }
+  
+  .btn{
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+  
+  }
+  
+  .btn-block{
+    width: 90%;
+    margin: 0 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    border-radius: 10px;
+
+
+    background-color: #35A954;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+  
+  .btn:hover{
+    background: #475569;
+  }
+
+
+.forlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome{
+    color: #35A954;
+    text-align: center;
+}
+
+.btn-block:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid  #35A954 ;
+
+}
+
+.hrefing{
+    text-align: center;
+    margin-left: 12rem;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}

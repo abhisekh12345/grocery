@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cartstyle.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Cart</h1>
+   
+    <h1>Cart</h1>
+    <div id="selectedItemContainer" class="boxedit vegetable">
+      <img src="image/broccoli.png" alt="bro" class="cardimg">
+      <div class="caname">
+        <h2>Broccoli</h2>
+        <div class="spdolnum">
+          <span class="spandollar">$</span>
+          <h2 class="numbercolor">5.87</h2>
+          <span class="spandollar">/kg</span>
+        </div>
+      </div>
+      <div>
+        <img src="image/time.png" alt="time" class="timeimg">
+      </div>
+      
+      <button class="Cardbutton" onclick="addToCart('Broccoli')">Add to Cart</button>
+    </div> -->
+
+
+
+
+
+
+    <h1>Cart</h1>
+    <h1>Cart</h1>
+    <div id="selectedItemContainer" class="boxedit">
+        <img id="itemImage" alt="item image" class="cardimg">
+        <div class="caname">
+            <h2 id="itemName"></h2>
+            <div class="spdolnum">
+                <span class="spandollar">$</span>
+                <h2 id="itemPrice" class="numbercolor"></h2>
+                <span class="spandollar">/kg</span>
+            </div>
+        </div>
+        <div>
+            <img src="image/time.png" alt="time" class="timeimg">
+        </div>
+    </div>
+
+
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     // Retrieve the selected item from local storage
+        //     const selectedItem = localStorage.getItem('selectedItem');
+
+        //     if (selectedItem) {
+        //         // Display the selected item on the page
+        //         const selectedItemContainer = document.getElementById('selectedItemContainer');
+        //         selectedItemContainer.textContent = `Selected Item: ${selectedItem}`;
+
+        //         // Clear the selected item from local storage (optional)
+        //         localStorage.removeItem('selectedItem');
+        //     }
+        // });
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const selectedItem = localStorage.getItem('selectedItem');
+
+        //     if (selectedItem) {
+        //         const selectedItemContainer = document.getElementById('selectedItemContainer');
+        //         selectedItemContainer.textContent = selectedItem;
+        //         selectedItemContainer.classList.add('box');
+        //     }
+        // });
+
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const selectedItem = localStorage.getItem('selectedItem');
+
+        //     if (selectedItem) {
+        //         const selectedItemContainer = document.getElementById('selectedItemContainer');
+        //         selectedItemContainer.getElementsByClassName('caname')[0].getElementsByTagName('h2')[0].textContent = selectedItem;
+        //         selectedItemContainer.classList.add('boxedit');
+        //     }
+        // });
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const selectedItem = localStorage.getItem('selectedItem');
+
+        //     if (selectedItem) {
+        //         const selectedItemContainer = document.getElementById('selectedItemContainer');
+        //         selectedItemContainer.innerHTML = selectedItem; // Set the item details
+        //         selectedItemContainer.classList.add('boxedit');
+        //     }
+        // });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectedItem = localStorage.getItem('selectedItem');
+
+            if (selectedItem) {
+                const item = JSON.parse(selectedItem);
+                const selectedItemContainer = document.getElementById('selectedItemContainer');
+                const itemName = document.getElementById('itemName');
+                const itemImage = document.getElementById('itemImage');
+                const itemPrice = document.getElementById('itemPrice');
+
+                itemName.textContent = item.name;
+                itemImage.src = item.image;
+                itemPrice.textContent = item.price;
+
+                selectedItemContainer.classList.add('boxedit');
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

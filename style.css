@@ -1,0 +1,479 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.firsthead{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar{
+    display: flex;
+}
+
+#first{
+   margin: 0.8rem;
+}
+
+
+.hello{
+   
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+  }
+  
+
+.secondText{
+  display: flex;
+  align-items: center;
+}
+
+.fortext{
+   
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.widthadjust{
+    
+    width: 60%;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 5rem;
+ 
+}
+
+.forsmalltext{
+    margin-top: 1rem;
+    width: 60%;
+}
+
+
+.image{
+   
+    width: 50%;
+    padding: 2rem;
+}
+
+.Greenbutton {
+    margin-top: 2rem;
+    background-color: #35A954;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+    width: 9rem;
+  }
+  
+  .Greenbutton:hover {
+    background-color: darkblue;
+  }
+
+  .Whitebutton {
+    margin-top: 2rem;
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+    border: 1px solid  #35A954 ;
+    margin-left: 1rem;
+  }
+  
+  .Whitebutton:hover {
+    background-color: darkblue;
+  }
+
+
+.imagewithtext{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.supply{
+    margin-left: 1rem;
+    letter-spacing: 1px;
+}
+
+  .roundimage{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+
+  .secondpart{
+    height: 35rem;
+    width: 44rem;
+  }
+  
+
+  .trustededitimg{
+    height: 16rem;
+    width: 100%;
+  }
+
+
+  .Third-main-row{
+    padding: 15px 10px;
+    display: flex;
+    height: 46rem;
+  }
+
+  .GocienText{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .DivideBoxes{
+  
+    width: 50%;
+    
+  }
+
+  .insideGocienText{
+    width: 70%;
+    padding: 1rem;
+  }
+
+  .gohead{
+    font-family: 'Merriweather Sans', sans-serif !important;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 3rem;
+  }
+
+  .texttext{
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .backgroundc{
+    background-color: #35A954;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+
+  .fa-check{
+    color: white;
+  }
+
+  .spanspan{
+    color: black;
+  }
+
+  .tickandtext{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .bestservice{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+
+.DivideBoxes{
+    display: flex;
+    padding: 1rem;
+}
+
+  .firstcolumn{
+  
+    width: 50%;
+    padding: 1rem;
+    margin: 5.8rem 0rem;
+  }
+
+  .secondcolum{
+   
+    width: 50%;
+    padding: 1rem;
+  }
+
+.box1{
+    border: 1px solid #d1d5db;
+    height: 14rem;
+    width: 19rem;
+    padding: 0.9rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.tickandtext1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+  }
+
+  .backgroundhigh{
+    background-color: #f3f4f6;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+
+.fafafa{
+    font-weight: 900;
+    font-size: 25px;
+    color: #35A954;
+}
+
+.texting{
+    margin-top: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.fifth-row{
+    display: flex;
+    background-color: #f3f4f6;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.weoffer{
+   
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.seemore{
+    width: 50%;
+}
+
+.widthadjust1{
+    width: 60%;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 4rem;
+ 
+}
+
+
+.seemoretext{
+    padding: 2rem;
+    width: 77%;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+
+.buttontext{
+     padding-left: 2rem;
+}
+
+.sevenImage{
+    width: 100%;
+    height: 40rem;
+}
+
+.donoutImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.forfortext{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+  letter-spacing: 1px;
+}
+
+.donout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+#sameclassname{
+    margin-left: 2rem;
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif !important;
+} 
+
+.startingIcon{
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fatwin{
+  margin-left: 2rem;
+ font-size: 25px;
+ color: #35A954;
+}
+
+
+.horizontal-line {
+  border-bottom: 1px solid #6b7280;
+}
+
+.startCurd{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.buttonclass{
+  margin-top: 1rem;
+}
+
+
+.container{
+  width: 85%;
+  margin: 0 8rem;
+  padding: 1rem;
+}
+
+.forgap{
+  margin-left: 1rem;
+}
+
+.boxedit{
+    border: 1px solid #d1d5db;
+    height: auto;
+    width: 19rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.startcard{
+  margin-top: 3rem;
+  display: flex;
+}
+
+.cardimg{
+  width: 15rem;
+  height: 15rem;
+}
+
+.caname{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spandollar{
+  font-size: 17px;
+}
+
+.numbercolor{
+  font-family: 'Merriweather Sans', sans-serif !important;
+  color: #35A954;
+  font-weight: bolder;
+  margin-top: -0.4rem;
+}
+
+
+.spdolnum{
+  display: flex;
+}
+
+
+.Cardbutton{
+  margin-top: 2rem;
+    background-color: #35A954;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+    width: 100%;
+}
+
+
+.timeimg{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+.Cardbutton:hover{
+  background-color: white;
+  border: 1px solid #9ca3af;
+  color: #35A954;
+  
+}
+
+.AddWhitebutton {
+  margin-top: 2rem;
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 3rem;
+  border: 1px solid  #35A954 ;
+  margin-left: 1rem;
+}
+
+
+
