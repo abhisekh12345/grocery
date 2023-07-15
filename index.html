@@ -31,14 +31,12 @@
 
 
         function addToCart(name, image, price) {
-            const item = {
-                name: name,
-                image: image,
-                price: price
-            };
-            localStorage.setItem('selectedItem', JSON.stringify(item));
+            sessionStorage.setItem('selectedItemName', name);
+            sessionStorage.setItem('selectedItemImage', image);
+            sessionStorage.setItem('selectedItemPrice', price);
             window.location.href = 'cart.html';
         }
+
 
 
     </script>
@@ -229,9 +227,9 @@
                 <button class="AddWhitebutton forgap" onclick="filterCards('vegetable')">Vegetable</button>
                 <button class="AddWhitebutton forgap" onclick="filterCards('fruit')">Fruit</button>
                 <button class="AddWhitebutton forgap" onclick="filterCards('frozen')">Frozen Food</button>
-                <button class="AddWhitebutton forgap">Fish & Seafood</button>
-                <button class="AddWhitebutton forgap">Cake&Bakery</button>
-                <button class="AddWhitebutton forgap">Milk</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('fish')">Fish & Seafood</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('cake')">Cake&Bakery</button>
+                <button class="AddWhitebutton forgap" onclick="filterCards('milk')">Milk</button>
             </div>
             <div class="creatingCard">
                 <div class="startcard">
@@ -250,12 +248,13 @@
                         <div>
                             <img src="image/time.png" alt="time" class="timeimg">
                         </div>
-                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to Cart</button>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to
+                            Cart</button>
                     </div>
 
 
                     <!-- box2javascript     -->
-                    <div class="boxedit">
+                    <div class="boxedit vegetable">
                         <img src="image/oninon.png" alt="bro" class="cardimg">
                         <div class="caname">
                             <h2>Onion</h2>
@@ -312,6 +311,90 @@
 
 
                 </div>
+                <div class="startsecondCard">
+                    <div class="boxedit fruit">
+                        <img src="image/grapes.jpg" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Grapes</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">20.6</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to
+                            Cart</button>
+                    </div>
+                            
+                             <!-- cake -->
+                    <div class="boxedit cake">
+                        <img src="image/cake.jpg" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Cake</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">16.2</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to
+                            Cart</button>
+                    </div>
+
+
+                    <div class="boxedit fish">
+                        <img src="image/fish.jpg" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>fish</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">30.34</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to
+                            Cart</button>
+                    </div>
+
+
+                    <div class="boxedit milk">
+                        <img src="image/milk.jpg" alt="bro" class="cardimg">
+                        <div class="caname">
+                            <h2>Milk</h2>
+                            <div class="spdolnum">
+                                <span class="spandollar">$</span>
+                                <h2 class="numbercolor">8.34</h2>
+                                <span class="spandollar">/kg</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="image/time.png" alt="time" class="timeimg">
+                        </div>
+                        <button class="Cardbutton" onclick="addToCart('Broccoli', 'image/broccoli.png', '5.87')">Add to
+                            Cart</button>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
             </div>
 
         </div>
